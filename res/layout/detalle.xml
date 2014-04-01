@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/lblTituloDetalles" 
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/mi_rectangulo"
+        >
+        <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+            >
+		    	<TextView
+		        android:id="@+id/lblPlaca"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+			    android:textStyle="bold" 
+		        android:text="@string/lblPlaca" />
+            
+      		    <TextView
+		        android:id="@+id/txtPlaca"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:text="UVX455" />
+            
+        </LinearLayout>
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+		     
+		    >
+			<TextView
+			    android:id="@+id/lblCategoria"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/lblCategoria" 
+			    android:textStyle="bold" 
+			    />
+		    		    
+		   	<TextView
+		        android:id="@+id/txtCategoria"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:text="Alertas" />
+		    		    
+		</LinearLayout>
+
+		<TextView
+		    android:id="@+id/lblDescripcion"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dp"
+		    android:text="@string/indicacionesDetalle" />
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Accidente con Muerto" />
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:text="2013-11-17" />
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo2" />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/mi_rectangulo"
+        >
+	    <ScrollView android:layout_width="fill_parent"
+	        android:layout_height="fill_parent">
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:padding="10dp"                    
+		        android:gravity="left">
+		        <TextView
+		            android:id="@+id/txtDescripcion"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:textColor="#44550d"
+		            android:text="Descripcion"
+		            />
+		    </LinearLayout>
+	     </ScrollView>
+        
+    </LinearLayout>
+    
+</LinearLayout>

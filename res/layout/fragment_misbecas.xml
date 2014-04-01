@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/lblVehiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/lblBecas"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+	<LinearLayout
+	    android:id="@+id/cuadro"
+	    android:layout_below="@id/lblVehiculo"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+        android:layout_marginTop="5dp"
+	    android:background="@drawable/mi_rectangulo" 
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    >
+
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/indicacionesBecas"
+	        />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lstVehiculos"
+       	android:layout_below="@id/cuadro"        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"        
+        >
+    </ListView>
+    
+</RelativeLayout>

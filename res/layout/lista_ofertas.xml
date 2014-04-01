@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dip" 
+    >
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/lblLogo"
+        android:src="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/txtEntidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgAvatar"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imgAvatar"
+        android:text="SENA"
+        android:textColor="#990000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtEntidad"
+        android:layout_below="@+id/txtEntidad"
+        android:text="UBICACION" />
+
+    <TextView
+        android:id="@+id/txtEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtUbicacion"
+        android:layout_below="@+id/txtUbicacion"
+        android:text="Edad: 18 - 24"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="italic" />
+
+<!--     <ImageView
+        android:id="@+id/imgNotificacion"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtPlaca"
+        android:contentDescription="@string/lblLogo"
+        android:src="@drawable/notification" 
+        />
+ -->
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtEdad"
+        android:layout_alignBottom="@+id/txtEdad"
+        android:layout_alignRight="@+id/imgNotificacion"
+        android:text="2013-11-11"
+        android:textSize="10sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="italic" 
+        />
+
+</RelativeLayout>
