@@ -62,7 +62,7 @@ public class ItemOfertaAdapter extends BaseAdapter {
 		entidad.setText(oferta.getEntidadNombre());
 		ubicacion.setText(oferta.getUrlFuente());
 		edad.setText(oferta.getEdadObjetivo());				
-		fecha.setText(oferta.getFechaVencimiento().substring(0, 10));
+		fecha.setText(oferta.getFechaVencimiento());
 		
 /*		if (veh.getVehiculoNotificado().equals(veh.getPlaca())){
 			noti.setVisibility(View.VISIBLE);

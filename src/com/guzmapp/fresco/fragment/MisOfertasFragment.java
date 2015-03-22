@@ -198,7 +198,7 @@ public class MisOfertasFragment extends Fragment {
 							break;
 						}
 */						contador++;
-						Oferta oferta=new Oferta(i, objeto.getString("PkOferta").toString(), objeto.getString("Oportunidad").toString(),objeto.getString("Ubicacion").toString(),objeto.getString("FechaVencimiento").toString(),objeto.getString("EdadObejtivo").toString(),objeto.getString("UrlFuente").toString(),objeto.getString("EntidadNombre").toString());
+						Oferta oferta=new Oferta(i, objeto.getString("id").toString(), objeto.getString("informe").toString(),objeto.getString("transito").toString(),objeto.getString("informe").toString(),objeto.getString("fecha_ocurrencia_at").toString(),objeto.getString("latitud").toString()+" "+objeto.getString("longitud").toString(),objeto.getString("direccion").toString());
 						
 /*						vehiculo.setFecha(pref.getFecha());
 						vehiculo.setPago(objeto.getInt("pago"));

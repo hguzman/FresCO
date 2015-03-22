@@ -66,13 +66,6 @@
 		        android:text="Alertas" />
 		    		    
 		</LinearLayout>
-
-		<TextView
-		    android:id="@+id/lblDescripcion"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_marginTop="5dp"
-		    android:text="@string/indicacionesDetalle" />
         
     </LinearLayout>
 
@@ -99,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="120dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo2" />
+        android:src="@drawable/transito" />
 
     <LinearLayout 
         android:layout_width="match_parent"
@@ -109,23 +102,11 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/mi_rectangulo"
         >
-	    <ScrollView android:layout_width="fill_parent"
-	        android:layout_height="fill_parent">
-		    <LinearLayout
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-				android:padding="10dp"                    
-		        android:gravity="left">
-		        <TextView
-		            android:id="@+id/txtDescripcion"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_gravity="center"
-		            android:textColor="#44550d"
-		            android:text="Descripcion"
-		            />
-		    </LinearLayout>
-	     </ScrollView>
+		<fragment
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.SupportMapFragment"/>
         
     </LinearLayout>
     

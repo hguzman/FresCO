@@ -13,7 +13,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:contentDescription="@string/lblLogo"
-        android:src="@drawable/logo2" />
+        android:src="@drawable/mapa" />
 
     <TextView
         android:id="@+id/txtEntidad"
@@ -54,17 +54,16 @@
         android:src="@drawable/notification" 
         />
  -->
+
     <TextView
         android:id="@+id/txtFecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtEdad"
-        android:layout_alignBottom="@+id/txtEdad"
-        android:layout_alignRight="@+id/imgNotificacion"
+        android:layout_below="@+id/imgAvatar"
+        android:layout_toLeftOf="@+id/txtEntidad"
         android:text="2013-11-11"
-        android:textSize="10sp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textStyle="italic" 
-        />
+        android:textSize="10sp"
+        android:textStyle="italic" />
 
 </RelativeLayout>

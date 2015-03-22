@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CtrlDetalle extends Activity {
+public class CtrlDetalle extends Activity implements OnMapReadyCallback {
 	private Oferta informacion;
 	private TextView placa;
 	private TextView desc;
@@ -27,7 +27,7 @@ public class CtrlDetalle extends Activity {
 		informacion=(Oferta) objeto;
 		
 		placa=(TextView)findViewById(R.id.txtPlaca);
-		desc=(TextView)findViewById(R.id.txtDescripcion);
+		//desc=(TextView)findViewById(R.id.txtDescripcion);
 		imagen=(ImageView)findViewById(R.id.imagen);
 		fecha=(TextView)findViewById(R.id.txtFecha);
 		titulo=(TextView)findViewById(R.id.txtTitulo);
@@ -41,6 +41,27 @@ public class CtrlDetalle extends Activity {
 
 //		bl= this.getIntent().getExtras();
 		categoria.setText(informacion.getUrlFuente());
+		
+        MapFragment mapFragment = (MapFragment) getFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+	}
+
+	public void onMapReady(GoogleMap map) {
+        LatLng sydney = new LatLng(-33.867, 151.206);
+
+        map.setMyLocationEnabled(true);
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 13));
+
+        map.addMarker(new MarkerOptions()
+                .title("Sydney")
+                .snippet("The most populous city in Australia.")
+                .position(sydney));
+    }
+
+	@Override
+	public void onMapLoaded() {
+		// TODO Auto-generated method stub
 		
 	}
 }
